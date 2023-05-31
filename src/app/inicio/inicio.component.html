@@ -1,0 +1,37 @@
+<ion-content padding>
+
+  <!--formulario-->
+  <form [formGroup]="formRegister" (ngSubmit)="submitForm()" novalidate>
+  
+  <!--Esto es lo primero que es visible (pide correo)-->    
+  
+    <ion-item>
+        <ion-input type="email" formControlName="email" class="custom" placeholder="¿Cual es tu correo?"></ion-input>
+        
+    </ion-item>
+    
+   
+    <ion-item>
+        <ion-input  type="password" formControlName="password" class="custom" placeholder="Elige tu contraseña"></ion-input>
+    
+    
+    </ion-item>
+    
+  
+      <ion-item>
+          <ion-input type="name" formControlName="name" class="custom" placeholder="¿Cual es tu nombre?"></ion-input>
+      </ion-item>
+
+   
+      
+      <ion-item-divider>
+          <ion-button size="larger"  type="submit" shape="round" color="success" routerLink="/prueba/{{name}}">Inicio</ion-button>
+           </ion-item-divider>
+
+
+   
+  
+</form>
+  </ion-content>
+
+
